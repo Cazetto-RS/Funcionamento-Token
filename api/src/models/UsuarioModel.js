@@ -120,7 +120,7 @@ export const listar = async (search = "", cx = null) => { // Função para lista
             // Obtém uma conexão do pool se não foi passada uma conexão
             localCx = await pool.getConnection();
         }
-        let query = "SELECT id,nome,email,avatar,createdAt,updatedAt FROM Usuario";
+        let query = "SELECT id,nome,email,avatar FROM Usuario";
         
         let values = [];
 
